@@ -1,1 +1,157 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .about-me {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .about-me img {
+            max-width: 300px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .about-me-text {
+            flex: 1;
+            max-width: 700px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            border-radius: 8px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .about-me {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-me img {
+                margin-bottom: 20px;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Personal Website</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#accomplishments">Accomplishments</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-me">
+            <img src="your-photo.jpg" alt="Your photo">
+            <div class="about-me-text">
+                <p>Hi, I'm [Your Name], a passionate individual with a focus on [your interests, like tech, design, volunteering]. Over the years, I have been involved in projects such as [mention notable projects like Ubuntu Project, AI Week, etc.]. My goal is to make a positive impact in [industry/society] through [your work or goals].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="accomplishments">
+        <h2>Accomplishments</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>AI Week Project</h3>
+                <p>Designed an AI game to track body movements, pushing the boundaries of creativity and programming in 72 hours.</p>
+            </div>
+            <div class="card">
+                <h3>Ubuntu Project</h3>
+                <p>Founded an NGO to teach social entrepreneurship, positively impacting over 50 students and engaging with 20 NGOs.</p>
+            </div>
+            <div class="card">
+                <h3>Recognized in National Magazines</h3>
+                <p>Featured in various publications for leadership and innovation in social entrepreneurship.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out to me via <a href="mailto:your-email@example.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
