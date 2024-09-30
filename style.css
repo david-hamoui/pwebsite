@@ -35,6 +35,16 @@ h2 {
     color: #333;
 }
 
+a {
+    color: #117351;  /* Same green color */
+    font-weight: bold;  /* Bold for emphasis */
+    text-decoration: none;  /* No underline initially */
+}
+
+a:hover {
+    text-decoration: underline;  /* Underline on hover */
+}
+
 /* About Me Section */
 .about-me {
     display: flex;
@@ -86,16 +96,6 @@ h2 {
 
 #intro .home li {
     margin-bottom: 10px;
-}
-
-#intro .home a {
-    color: #117351;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#intro .home a:hover {
-    text-decoration: underline;
 }
 
 .contact-info {
