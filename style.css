@@ -88,6 +88,23 @@ h2 {
     margin-bottom: 10px;
 }
 
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #117351;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 
 /* Footer Styles */
 footer {
