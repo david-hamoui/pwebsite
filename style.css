@@ -19,9 +19,13 @@ header {
     width: 100%;
     z-index: 1000;
     margin: 0;
+    transition: padding 0.3s ease, background-color 0.3s ease;
 }
 
-
+.shrink {
+    padding: 10px 0;
+    background-color: #0a5238; /* You can change color if desired */
+}
 
 nav a {
     color: white;
@@ -53,6 +57,7 @@ a {
 a:hover {
     text-decoration: underline;  
 }
+
 
 #main-title a {
     color: white; 
