@@ -47,12 +47,12 @@ a:hover {
 
 #main-title a {
     color: white; 
-    transition: color 0.3s; 
+    transition: color 0.7s; 
     text-decoration: none; 
 }
 
 #main-title a:hover {
-    color: #73ff00; 
+    color: #FFD700; 
 }
 
 /* About Me Section */
