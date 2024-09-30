@@ -36,13 +36,13 @@ h2 {
 }
 
 a {
-    color: #117351;  /* Same green color */
-    font-weight: bold;  /* Bold for emphasis */
-    text-decoration: none;  /* No underline initially */
+    color: #117351;  
+    font-weight: bold;  
+    text-decoration: none;  
 }
 
 a:hover {
-    text-decoration: underline;  /* Underline on hover */
+    text-decoration: underline;  
 }
 
 /* About Me Section */
@@ -103,16 +103,6 @@ a:hover {
     margin: 0 auto;
     text-align: center;
     line-height: 2;
-}
-
-.contact-info a {
-    color: #117351;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
 }
 
 
