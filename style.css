@@ -45,6 +45,16 @@ a:hover {
     text-decoration: underline;  
 }
 
+#main-title {
+    color: white; 
+    transition: color 0.3s; 
+    text-decoration: none; 
+}
+
+#main-title:hover {
+    color: #73ff00; 
+}
+
 /* About Me Section */
 .about-me {
     display: flex;
