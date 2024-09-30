@@ -74,6 +74,38 @@ a:hover {
     line-height: 2.5;
 }
 
+
+.about-me-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.about-me-section h2 {
+    text-align: center;
+    color: #117351;
+    margin-bottom: 30px;
+}
+
+.about-me-text p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-me-section p {
+    font-family: Georgia, serif;
+    color: #555;
+}
+
+.about-me-section p:first-letter {
+    font-size: 1.4em;
+    color: #117351;
+    font-weight: bold;
+}
+
+
 /* Cards Layout */
 .cards {
     display: flex;
