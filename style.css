@@ -39,6 +39,14 @@ nav a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 section {
