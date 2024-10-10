@@ -72,6 +72,74 @@ a:hover {
     color: #FFD700; 
 }
 
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6fff3;
+    color: #333;
+}
+
+header {
+    background-color: #117351;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.year-section {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+h2 {
+    color: #117351;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Timeline */
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.year-section {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* e */
+
 
 html {
     scroll-behavior: smooth;
