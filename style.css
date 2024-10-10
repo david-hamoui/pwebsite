@@ -79,6 +79,20 @@ a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 20px;
+    position: relative;
+}
+
+/* Vertical line */
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #117351;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 .year-section {
@@ -90,6 +104,24 @@ a:hover {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    position: relative;
+    width: 45%;
+}
+
+.year-section:nth-child(odd) {
+    float: left;
+    clear: left;
+    text-align: right;
+}
+
+.year-section:nth-child(even) {
+    float: right;
+    clear: right;
+    text-align: left;
+}
+
+.year-section h2 {
+    color: #117351;
 }
 
 .fade-in.show {
@@ -97,6 +129,18 @@ a:hover {
     transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+    .year-section {
+        width: 100%;
+        text-align: center;
+        float: none;
+        clear: both;
+    }
+
+    .timeline-container::before {
+        left: 10px;  /* Adjust the line to be closer to the timeline on small screens */
+    }
+}
 
 /* e */
 
