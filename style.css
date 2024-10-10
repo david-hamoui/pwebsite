@@ -72,6 +72,11 @@ a:hover {
     color: #FFD700; 
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* About Me Section */
 .about-me {
     display: flex;
