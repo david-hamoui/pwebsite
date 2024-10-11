@@ -209,13 +209,18 @@ html {
     max-width: 300px;
     text-align: center;
     color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, background-image 0.3s ease;
+    background-size: cover;
+    background-position: center;
 }
 
 .card:hover {
     background-color: #333;
     color: #fff;
+    transform: scale(1.2);
+    background-image: url('family_picture.jpg');
 }
+
 
 #intro .home {
     max-width: 800px;
