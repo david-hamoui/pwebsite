@@ -125,6 +125,12 @@ a:hover {
     width: 45%;
 }
 
+#year-2007 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none; /* Remove any transition effect */
+}
+
 .year-section h2 {
     color: #117351;
 }
