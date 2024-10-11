@@ -80,15 +80,19 @@ a:hover {
     margin: 0 auto;
     padding: 50px 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 /* Vertical line */
 .timeline-container::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 20%;
     left: 50%;
-    width: 2px;
+    width: 5px;
     height: 100%;
     background-color: #117351;
     transform: translateX(-50%);
