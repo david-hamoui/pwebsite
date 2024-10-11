@@ -112,18 +112,6 @@ a:hover {
     width: 45%;
 }
 
-.year-section:nth-child(odd) {
-    float: left;
-    clear: left;
-    text-align: right;
-}
-
-.year-section:nth-child(even) {
-    float: right;
-    clear: right;
-    text-align: left;
-}
-
 .year-section h2 {
     color: #117351;
 }
