@@ -93,7 +93,7 @@ a:hover {
     top: 10%;
     left: 50%;
     width: 5px;
-    height: calc(100% - 220px);
+    height: calc(100% - 230px);
     background-color: #117351;
     transform: translateX(-50%);
     z-index: -1;
@@ -214,11 +214,79 @@ html {
     background-position: center;
 }
 
-.card:hover {
-    background-color: #333;
+/* Personal Projects */
+.ip:hover {
+    transform: scale(1.1);
+    background-image: url('images/ip.jpg');
     color: #fff;
-    transform: scale(1.2);
-    background-image: url('family_picture.jpg');
+}
+
+.up:hover {
+    transform: scale(1.1);
+    background-image: url('images/up.jpg');
+    color: #fff;
+}
+
+.ocj:hover {
+    transform: scale(1.1);
+    background-image: url('images/ocj.jpg');
+    color: #fff;
+}
+
+/* Coding Experience */
+.awp:hover {
+    transform: scale(1.1);
+    background-image: url('images/awp.jpg');
+    color: #fff;
+}
+
+.li:hover {
+    transform: scale(1.1);
+    background-image: url('images/li.jpg'); 
+    color: #fff;
+}
+
+.wordle:hover {
+    transform: scale(1.1);
+    background-image: url('images/wordle.jpg'); 
+    color: #fff;
+}
+
+.nonogram:hover {
+    transform: scale(1.1);
+    background-image: url('images/nonogram.jpg'); 
+    color: #fff;
+}
+
+.tw:hover {
+    transform: scale(1.1);
+    background-image: url('images/tw.jpg'); 
+    color: #fff;
+}
+
+/* My Extracurriculars */
+.rc:hover {
+    transform: scale(1.1);
+    background-image: url('images/rc.jpg'); 
+    color: #fff;
+}
+
+.fc:hover {
+    transform: scale(1.1);
+    background-image: url('images/fc.jpg');
+    color: #fff;
+}
+
+.netzah:hover {
+    transform: scale(1.1);
+    background-image: url('images/netzah.jpg'); 
+    color: #fff;
+}
+
+.tp:hover {
+    transform: scale(1.1);
+    background-image: url('images/tp.jpg');
+    color: #fff;
 }
 
 
