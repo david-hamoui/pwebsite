@@ -90,7 +90,7 @@ a:hover {
 .timeline-container::before {
     content: "";
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     width: 5px;
     height: calc(100% - 200px);
