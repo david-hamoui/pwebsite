@@ -6,6 +6,7 @@ body {
     background-color: #e6fff3;
     color: #333;
     padding-top: 150px;
+    cursor: none;
 }
 
 header {
@@ -138,6 +139,16 @@ a:hover {
     .timeline-container::before {
         left: 10px;  /* Adjust the line to be closer to the timeline on small screens */
     }
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 
 /* e */
