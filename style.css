@@ -6,7 +6,6 @@ body {
     background-color: #e6fff3;
     color: #333;
     padding-top: 150px;
-    cursor: none;
 }
 
 header {
@@ -143,8 +142,8 @@ a:hover {
 
 .circle {
     position: fixed;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-color: #FFD700;
     border-radius: 50%;
     z-index: 9999;
@@ -156,8 +155,9 @@ a:hover {
 /* e */
 
 
-html {
+html * {
     scroll-behavior: smooth;
+    cursor: none !important;
 }
 
 /* About Me Section */

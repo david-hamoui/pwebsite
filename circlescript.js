@@ -12,13 +12,13 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('click', () => {
     // Shrink the circle
     circle.style.transform = 'scale(0.5)';
-    circle.style.width = '25px';
-    circle.style.height = '25px';
+    circle.style.width = '15px';
+    circle.style.height = '15px';
 
     // Return to original size after shrinking
     setTimeout(() => {
         circle.style.transform = 'scale(1)';
-        circle.style.width = '50px';
-        circle.style.height = '50px';
+        circle.style.width = '30px';
+        circle.style.height = '30px';
     }, 200); // Delay before returning to original size
 });
