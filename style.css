@@ -144,12 +144,16 @@ a:hover {
     position: fixed;
     width: 30px;
     height: 30px;
-    background-color: #FFD700;
+    background-color: #e2c000;
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
     transform-origin: center;
     transition: transform 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.circle.clicked {
+    background-color: #8d7800;
 }
 
 /* e */
