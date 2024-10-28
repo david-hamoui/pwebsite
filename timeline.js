@@ -6,7 +6,7 @@ document.addEventListener("scroll", function() {
         const sectionTop = rect.top;
         const windowHeight = window.innerHeight;
 
-        if (sectionTop <= windowHeight - 350) {
+        if (sectionTop <= windowHeight - 325) {
             section.classList.add("show");
         }
     });
