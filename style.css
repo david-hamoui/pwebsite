@@ -306,6 +306,12 @@ html * {
     color: #fff;
 }
 
+.gh:hover {
+    transform: scale(1.2);
+    background-image: url('images/gh.jpg');
+    color: #fff;
+}
+
 
 #intro .home {
     max-width: 800px;
