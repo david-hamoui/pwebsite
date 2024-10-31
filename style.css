@@ -351,6 +351,34 @@ footer a {
     text-decoration: none;
 }
 
+/*books*/
+#books {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#books h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#books ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#books li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.author {
+    color: #555;
+    font-size: 0.9rem;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .about-me {
