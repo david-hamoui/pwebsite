@@ -386,6 +386,25 @@ footer a {
     font-size: 0.9rem;
 }
 
+.current-reading li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.current-reading img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.current-reading span {
+    font-size: 1.1rem;
+    color: #333;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .about-me {
