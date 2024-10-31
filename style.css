@@ -353,15 +353,20 @@ footer a {
 
 /*books*/
 #books {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
+    font-family: inherit;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    color: #333;
 }
 
 #books h2 {
-    color: #333;
-    margin-bottom: 10px;
+    color: #117351;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 #books ul {
@@ -370,12 +375,14 @@ footer a {
 }
 
 #books li {
-    margin: 5px 0;
-    font-size: 1rem;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .author {
     color: #555;
+    font-style: italic;
     font-size: 0.9rem;
 }
 
