@@ -256,6 +256,16 @@ html * {
     color: #fff;
 }
 
+.card .projects {
+    transition: opacity 0.3s ease;
+}
+
+.ip:hover .projects,
+.up:hover .projects,
+.ocj:hover .projects {
+    opacity: 0; /* Makes the content fade out */
+}
+
 /* Coding Experience */
 .awp:hover {
     transform: scale(1.2);
