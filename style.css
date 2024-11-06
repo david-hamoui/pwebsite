@@ -241,6 +241,7 @@ html * {
     transform: scale(1.2);
     background-image: url('images/ip.jpg');
     color: #fff;
+    opacity: 0;
 }
 
 .up:hover {
