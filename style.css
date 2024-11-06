@@ -240,8 +240,7 @@ html * {
 .ip:hover {
     transform: scale(1.2);
     background-image: url('images/ip.jpg');
-    color: #fff;
-    opacity: 0;
+    color: #c50000;
 }
 
 .up:hover {
@@ -256,15 +255,6 @@ html * {
     color: #fff;
 }
 
-.card .projects {
-    transition: opacity 0.3s ease;
-}
-
-.ip:hover .projects,
-.up:hover .projects,
-.ocj:hover .projects {
-    opacity: 0; /* Makes the content fade out */
-}
 
 /* Coding Experience */
 .awp:hover {
