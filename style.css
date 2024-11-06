@@ -240,19 +240,19 @@ html * {
 .ip:hover {
     transform: scale(1.2);
     background-image: url('images/ip.jpg');
-    color: #c50000;
+    color: #ffffff00;
 }
 
 .up:hover {
     transform: scale(1.2);
     background-image: url('images/up.jpg');
-    color: #fff;
+    color: #ffffff00;
 }
 
 .ocj:hover {
     transform: scale(1.2);
     background-image: url('images/ocj.jpg');
-    color: #fff;
+    color: #ffffff00;
 }
 
 
@@ -260,56 +260,56 @@ html * {
 .awp:hover {
     transform: scale(1.2);
     background-image: url('images/awp.jpg');
-    color: #fff;
+    color: #ffffff00;
 }
 
 .li:hover {
     transform: scale(1.2);
     background-image: url('images/li.jpg'); 
-    color: #fff;
+    color: #ffffff00;
 }
 
 .wordle:hover {
     transform: scale(1.2);
     background-image: url('images/wordle.jpg'); 
-    color: #fff;
+    color: #ffffff00;
 }
 
 .nonogram:hover {
     transform: scale(1.2);
     background-image: url('images/nonogram.jpg'); 
-    color: #fff;
+    color: #ffffff00;
 }
 
 .tw:hover {
     transform: scale(1.2);
     background-image: url('images/tw.jpg'); 
-    color: #fff;
+    color: #ffffff00;
 }
 
 /* My Extracurriculars */
 .rc:hover {
     transform: scale(1.2);
     background-image: url('images/rc.jpg'); 
-    color: #fff;
+    color: #ffffff00;
 }
 
 .fc:hover {
     transform: scale(1.2);
     background-image: url('images/fc.jpg');
-    color: #fff;
+    color: #ffffff00;
 }
 
 .netzah:hover {
     transform: scale(1.2);
     background-image: url('images/netzah.jpg'); 
-    color: #fff;
+    color: #ffffff00;
 }
 
 .tp:hover {
     transform: scale(1.2);
     background-image: url('images/tp.jpg');
-    color: #fff;
+    color: #ffffff00;
 }
 
 .gh:hover {
