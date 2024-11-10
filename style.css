@@ -157,6 +157,29 @@ a:hover {
     transition: left 0.1s ease-out, top 0.1s ease-out, transform 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.4s ease-in-out;
 }
 
+.circle::before,
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 20px; 
+    height: 5px; 
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle::before {
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%) rotate(-30deg);
+}
+
+.circle::after {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%) rotate(30deg);
+}
+
 .circle.clicked {
     background-color: #8d7800;
 }
