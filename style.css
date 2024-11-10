@@ -149,29 +149,15 @@ a:hover {
     position: fixed;
     width: 30px;
     height: 30px;
-    background-color: #7bc133;  /* before: #e2c000*/
+    background-image: url('images/tennisball.jpg');
+    background-size: cover;
+    background-position: center;
+    /*background-color: #7bc133; before: #e2c000*/
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
     transform-origin: center;
     transition: left 0.1s ease-out, top 0.1s ease-out, transform 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.4s ease-in-out;
-}
-.circle .curve {
-    position: absolute;
-    width: 40px;
-    height: 20px;
-    border: solid 3px #dff6c8;
-    border-color: #dff6c8 transparent transparent transparent;
-    border-radius: 50%/20px 20px 0 0;
-    transform: rotate(30deg);
-    top: 10px;
-    left: -5px;
-}
-
-.circle .curve.curve2 {
-    transform: rotate(-30deg);
-    right: -5px;
-    left: auto;
 }
 
 .circle.clicked {
