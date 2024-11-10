@@ -8,6 +8,10 @@ body {
     padding-top: 150px;
 }
 
+::selection {
+    background: #ffb7b7;
+}
+
 header {
     background-color: #117351;
     color: #fff;
