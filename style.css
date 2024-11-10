@@ -35,6 +35,12 @@ nav a {
     text-decoration: none;
 }
 
+nav b {
+    color: white;
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -70,6 +76,12 @@ a:hover {
 
 #main-title a:hover {
     color: #FFD700; 
+}
+
+#main-title b {
+    color: #FFD700;
+    transition: color 0.7;
+    text-decoration: none;
 }
 
 
