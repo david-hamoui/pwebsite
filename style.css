@@ -115,7 +115,7 @@ a:hover {
 #year-2007 {
     opacity: 1;
     transform: translateY(0);
-    transition: none; /* Remove any transition effect */
+    transition: none; 
 }
 
 .year-section h2 {
@@ -128,7 +128,7 @@ a:hover {
 }
 
 .spacer {
-    height: 100px; /* Adjust the height as needed */
+    height: 100px;
     width: 100%;
 }
 
@@ -141,7 +141,7 @@ a:hover {
     }
 
     .timeline-container::before {
-        left: 10px;  /* Adjust the line to be closer to the timeline on small screens */
+        left: 10px;  
     }
 }
 
@@ -149,35 +149,30 @@ a:hover {
     position: fixed;
     width: 30px;
     height: 30px;
-    background-color: #e2c000;
+    background-color: #7bc133;  /* before: #e2c000*/
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
     transform-origin: center;
     transition: left 0.1s ease-out, top 0.1s ease-out, transform 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.4s ease-in-out;
+    overflow: hidden;
 }
-
-.circle::before,
-.circle::after {
-    content: "";
+.circle .curve {
     position: absolute;
-    width: 20px; 
-    height: 5px; 
-    background-color: white;
-    border-radius: 50%;
-    z-index: 1;
+    width: 40px;
+    height: 20px;
+    border: solid 3px #dff6c8;
+    border-color: #dff6c8 transparent transparent transparent;
+    border-radius: 50%/20px 20px 0 0;
+    transform: rotate(30deg);
+    top: 10px;
+    left: -5px;
 }
 
-.circle::before {
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%) rotate(-30deg);
-}
-
-.circle::after {
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%) rotate(30deg);
+.circle .curve.curve2 {
+    transform: rotate(-30deg);
+    right: -5px;
+    left: auto;
 }
 
 .circle.clicked {
