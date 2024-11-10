@@ -155,7 +155,6 @@ a:hover {
     pointer-events: none;
     transform-origin: center;
     transition: left 0.1s ease-out, top 0.1s ease-out, transform 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.4s ease-in-out;
-    overflow: hidden;
 }
 .circle .curve {
     position: absolute;
