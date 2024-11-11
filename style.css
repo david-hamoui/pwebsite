@@ -258,7 +258,7 @@ html * {
 
 /* Honors (medal animation) */
 
-.card:hover .pop-out-medal {
+.cards:hover .pop-out-medal {
     transform: translate(-50%, -50%) scale(1);
 }
 
