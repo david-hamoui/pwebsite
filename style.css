@@ -266,7 +266,7 @@ html * {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0); 
+    transform: translateX(100%) scale(0); 
     width: 250px; 
     height: auto; 
     transition: transform 0.3s ease-in-out;
