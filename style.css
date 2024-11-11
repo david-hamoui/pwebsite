@@ -259,15 +259,15 @@ html * {
 /* Honors (medal animation) */
 
 .cards:hover .pop-out-medal {
-    transform: translateX(-100%) scale(1);
+    transform: translateY(-100%) scale(1);
 }
 
 .pop-out-medal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(100%) scale(0); 
-    width: 250px; 
+    transform: translateY(-100%) scale(0); 
+    width: 25px; 
     height: auto; 
     transition: transform 0.3s ease-in-out;
     z-index: 1;
