@@ -273,6 +273,7 @@ html * {
     border-radius: 8px;
     max-width: 300px;
     text-align: center;
+    position: relative;
 }
 
 
