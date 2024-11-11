@@ -256,6 +256,23 @@ html * {
     z-index: 2;
 }
 
+.hcard {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, background-image 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+
 /* Honors (medal animation) */
 
 .card:hover .pop-out-medal {
