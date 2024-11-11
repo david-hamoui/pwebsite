@@ -256,8 +256,16 @@ html * {
     z-index: 2;
 }
 
+
+/* Honor Cards (medal animation) */
+
+.hcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .hcard {
-    position: relative;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -265,21 +273,14 @@ html * {
     border-radius: 8px;
     max-width: 300px;
     text-align: center;
-    color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, background-image 0.3s ease;
-    background-size: cover;
-    background-position: center;
-    z-index: 2;
 }
 
 
-/* Honors (medal animation) */
-
-.card:hover .pop-out-medal {
+.hcard:hover .pop-out-medal {
     transform: translateY(-530%) scale(1);
 }
 
-.card .pop-out-medal {
+.hcard .pop-out-medal {
     position: absolute;
     top: 50%;
     left: 50%;
