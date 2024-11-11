@@ -278,14 +278,14 @@ html * {
 
 
 .hcard:hover .pop-out-medal {
-    transform: translateY(-550%) scale(1);
+    transform: translateY(27px) scale(1);
 }
 
 .hcard .pop-out-medal {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 47%;
-    transform: translateY(-550%) scale(0); 
+    transform: translateY(-27px) scale(0); 
     width: 25px; 
     height: auto; 
     transition: transform 0.3s ease-in-out;
