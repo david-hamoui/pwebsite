@@ -335,6 +335,7 @@ html * {
     transform: scale(1.2);
     background-image: url('images/fc.jpg');
     color: #ffffff00;
+    z-index: 3;
 }
 
 .netzah:hover {
