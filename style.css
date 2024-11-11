@@ -275,6 +275,11 @@ body, html * {
     text-align: center;
     position: relative;
     z-index: 2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hcard:hover {
+    background-color: #FFD700;
 }
 
 
