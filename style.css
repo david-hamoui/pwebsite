@@ -183,7 +183,7 @@ a:hover {
 /* e */
 
 
-html * {
+body, html * {
     scroll-behavior: smooth;
     cursor: none !important;
 }
