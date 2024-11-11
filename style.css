@@ -259,7 +259,7 @@ html * {
 /* Honors (medal animation) */
 
 .cards:hover .pop-out-medal {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-100%) scale(1);
 }
 
 .pop-out-medal {
@@ -272,6 +272,7 @@ html * {
     transition: transform 0.3s ease-in-out;
     z-index: 1;
 }
+
 
 /* Personal Projects */
 .ip:hover {
