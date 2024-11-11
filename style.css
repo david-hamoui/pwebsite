@@ -278,7 +278,7 @@ html * {
 
 
 .hcard:hover .pop-out-medal {
-    transform: translateY(27px) scale(1);
+    transform: translateY(-27px) scale(1);
 }
 
 .hcard .pop-out-medal {
