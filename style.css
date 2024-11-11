@@ -285,7 +285,19 @@ body, html * {
     */
 
 .bnze:hover {
-    background-color: #ffa200;
+    background-color: #ffc562;
+}
+
+.slvr:hover {
+    background-color: #c1c1c1;
+}
+
+.gld:hover {
+    background-color: #FFD700;
+}
+
+.hono:hover {
+    background-color: #89ff79;
 }
 
 
