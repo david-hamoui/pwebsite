@@ -285,7 +285,7 @@ html * {
     position: absolute;
     top: 0%;
     left: 47%;
-    transform: translateY(-27px) scale(0); 
+    transform: translateY(0px) scale(0); 
     width: 25px; 
     height: auto; 
     transition: transform 0.3s ease-in-out;
