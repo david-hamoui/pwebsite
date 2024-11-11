@@ -262,7 +262,7 @@ html * {
     transform: translateY(-530%) scale(1);
 }
 
-.pop-out-medal {
+.card .pop-out-medal {
     position: absolute;
     top: 50%;
     left: 50%;
