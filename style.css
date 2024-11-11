@@ -274,6 +274,7 @@ html * {
     max-width: 300px;
     text-align: center;
     position: relative;
+    z-index: 2;
 }
 
 
