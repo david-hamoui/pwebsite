@@ -284,7 +284,7 @@ html * {
 .hcard .pop-out-medal {
     position: absolute;
     top: 50%;
-    left: 50% - 12.5px;
+    left: 47%;
     transform: translateY(-550%) scale(0); 
     width: 25px; 
     height: auto; 
