@@ -328,7 +328,7 @@ body, html * {
 .up:hover {
     transform: scale(1.2);
     background-image: url('images/up.jpg');
-    color: #fff;
+    color: #ffffff00;
 }
 
 .up:hover a {
