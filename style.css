@@ -331,6 +331,10 @@ body, html * {
     color: #fff;
 }
 
+.up:hover a {
+    background-color: #ffd700;
+}
+
 .ocj:hover {
     transform: scale(1.2);
     background-image: url('images/ocj.jpg');
