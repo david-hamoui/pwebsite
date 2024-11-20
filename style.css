@@ -402,7 +402,11 @@ body, html * {
 .gh:hover {
     transform: scale(1.2);
     background-image: url('images/gh.jpg');
-    color: #fff;
+    color: #ffffff00;
+}
+
+.gh:hover a {
+    background-color: #ffd700;
 }
 
 
