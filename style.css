@@ -374,8 +374,13 @@ body, html * {
     color: #333;
 }
 
-.news-page p {
+.subtitle p {
     text-align: center;
+    color: #333;
+}
+
+.news-page p {
+    text-align: left;
     color: #333;
 }
 
