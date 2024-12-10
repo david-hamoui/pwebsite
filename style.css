@@ -345,8 +345,9 @@ body, html * {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    margin: 40px;
-    max-width: 900px;
+    margin: 0 auto;
+    max-width: 1000px;
+    max-height: 60%;
 }
 
 .news-card {
