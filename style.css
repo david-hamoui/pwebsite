@@ -61,10 +61,6 @@ h2 {
     color: #333;
 }
 
-subtitle {
-    text-align: center;
-    color: #333;
-}
 
 a {
     color: #117351;  
@@ -365,6 +361,11 @@ body, html * {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.news-page p {
+    text-align: center;
+    color: #333;
+}
+
 .news-card img {
     width: 100%;
     height: auto;
@@ -379,12 +380,9 @@ body, html * {
     color: #333;
 }
 
-.news-page p {
+.news-content p {
     text-align: left;
     color: #333;
-}
-
-.news-content p {
     margin: 5px 0;
 }
 
