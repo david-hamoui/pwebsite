@@ -343,9 +343,10 @@ body, html * {
 /* News Cards */
 .news-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin: 40px;
+    max-width: 900px;
 }
 
 .news-card {
@@ -367,8 +368,16 @@ body, html * {
 }
 
 .news-card img {
-    width: 100%;
+    width: 70%;
     height: auto;
+}
+
+.news-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center the images */
+    margin-bottom: 10px;
 }
 
 .news-content {
