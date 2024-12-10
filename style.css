@@ -61,6 +61,11 @@ h2 {
     color: #333;
 }
 
+subtitle {
+    text-align: center;
+    color: #333;
+}
+
 a {
     color: #117351;  
     font-weight: bold;  
@@ -371,11 +376,6 @@ body, html * {
 
 .news-content h3 {
     margin-top: 0;
-    color: #333;
-}
-
-.subtitle p {
-    text-align: center;
     color: #333;
 }
 
