@@ -361,16 +361,21 @@ body, html * {
 }
 
 .news-card img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
 .news-content {
-    padding: 15px;
+    padding: 20px;
 }
 
 .news-content h3 {
     margin-top: 0;
+    color: #333;
+}
+
+.news-page p {
+    text-align: center;
     color: #333;
 }
 
