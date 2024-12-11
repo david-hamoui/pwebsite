@@ -369,12 +369,12 @@ body, html * {
 }
 
 .news-card img {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
 .news-card .image-container img {
-    width: 100px; 
+    width: 150px; 
     height: auto; 
     border-radius: 5px;
 }
