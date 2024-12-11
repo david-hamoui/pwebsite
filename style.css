@@ -373,12 +373,17 @@ body, html * {
     height: auto;
 }
 
-.news-images {
+.news-card .image-container img {
+    width: 100px; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.news-card .image-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center; /* Center the images */
-    margin-bottom: 10px;
+    gap: 10px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 .news-content {
