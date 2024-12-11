@@ -81,7 +81,7 @@ a:hover {
         box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
     }
     100% {
-        box-shadow: 0 0 0 50px rgba(255, 215, 0, 0);
+        box-shadow: 0 0 0 30px rgba(255, 215, 0, 0);
     }
 }
 
@@ -103,7 +103,6 @@ a:hover {
 
 .news-button:hover {
     background-color: #ff6d50;
-    /*animation: pulsate 1.5s infinite;*/
 }
 
 
