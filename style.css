@@ -91,7 +91,7 @@ a:hover {
     color: #000;
 }
 
-nav b.news-button {
+header b {
     position: absolute;
     top: 20px;
     right: 20px; /* Align to top-right corner */
