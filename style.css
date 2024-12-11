@@ -91,7 +91,7 @@ a:hover {
     color: #000;
 }
 
-header h1 {
+header h2 {
     position: absolute;
     top: 20px;
     right: 20px; /* Align to top-right corner */
