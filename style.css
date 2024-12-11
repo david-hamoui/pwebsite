@@ -74,9 +74,9 @@ a:hover {
 
 
 .news-button {
-    position: absolute;
+    position: relative;
     top: 20px;
-    right: 20px; /* Align to top-right corner */
+    right: 20px; 
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: #FFD700;
@@ -92,9 +92,9 @@ a:hover {
 }
 
 header h2 {
-    position: absolute;
+    position: relative;
     top: 20px;
-    right: 20px; /* Align to top-right corner */
+    right: 20px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: #ff6d50;
