@@ -84,6 +84,7 @@ a:hover {
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease-in-out;
+    animation: pulsate 1.5s infinite;
 }
 
 .news-button:hover {
@@ -95,15 +96,15 @@ a:hover {
 @keyframes pulsate {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 10px #c1523c;
+        /*box-shadow: 0 0 10px #c1523c;*/
     }
     50% {
         transform: scale(1.2);
-        box-shadow: 0 0 20px #de6951;
+        /*box-shadow: 0 0 20px #de6951;*/
     }
     100% {
         transform: scale(1);
-        box-shadow: 0 0 10px #c1523c;
+        /*box-shadow: 0 0 10px #c1523c;*/
     }
 }
 
