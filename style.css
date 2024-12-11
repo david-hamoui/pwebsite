@@ -89,19 +89,7 @@ a:hover {
 .news-button:hover {
     background-color: #ff6d50;
     color: #000;
-}
-
-header h3 {
-    position: relative;
-    top: 20px;
-    right: 0px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    background-color: #ff6d50;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: all 0.3s ease-in-out;
+    animation: pulsate 1.5s infinite;
 }
 
 
