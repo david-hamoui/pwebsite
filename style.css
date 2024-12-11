@@ -73,18 +73,15 @@ a:hover {
 }
 
 /* Pulsating */
-@keyframes pulsate {
+@keyframes pulse {
     0% {
-        transform: scale(1);
-        /*box-shadow: 0 0 10px #c1523c;*/
+        box-shadow: 0 0 0 0 rgba(255, 215, 0, 1);
     }
-    50% {
-        transform: scale(1.2);
-        /*box-shadow: 0 0 20px #de6951;*/
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
     }
     100% {
-        transform: scale(1);
-        /*box-shadow: 0 0 10px #c1523c;*/
+        box-shadow: 0 0 0 50px rgba(255, 215, 0, 0);
     }
 }
 
@@ -99,7 +96,9 @@ a:hover {
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease-in-out;
-    animation: pulsate 1.5s infinite;
+    -moz-animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
 }
 
 .news-button:hover {
