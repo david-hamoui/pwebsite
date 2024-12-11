@@ -95,7 +95,7 @@ a:hover {
     padding: 5px 15px;
     border-radius: 5px;
     font-size: 1rem;
-    transition: background-color 0.3s ease-in-out, padding 0.5s ease;
+    transition: background-color 0.3s ease-in-out, padding 0.5s ease, font-size 0.5 ease;
     -moz-animation: pulse 2s infinite;
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
@@ -103,6 +103,8 @@ a:hover {
 
 .news-button.shrink {
     padding: 3px 9px;
+    font-size: 0.7em;
+    background-color: #e6c400;
 }
 
 .news-button:hover {
