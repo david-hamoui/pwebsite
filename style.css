@@ -91,6 +91,19 @@ a:hover {
     color: #000;
 }
 
+nav b.news-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Align to top-right corner */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #ff6d50;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
 
 #main-title a {
     color: white; 
