@@ -373,7 +373,15 @@ body, html * {
 }
 
 .news-card {
-    max-width: calc(33%);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card2 {
+    max-width: calc(33.33% - 40px);
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
