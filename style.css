@@ -394,6 +394,11 @@ body, html * {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.news-card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .news-page p {
     text-align: center;
     color: #333;
@@ -404,6 +409,7 @@ body, html * {
     height: auto;
 }
 
+
 .news-card .image-container img {
     width: 150px; 
     height: auto; 
@@ -411,6 +417,24 @@ body, html * {
 }
 
 .news-card .image-container {
+    display: flex;
+    gap: 10px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.news-card2 img {
+    width: 80px;
+    height: auto;
+}
+
+.news-card2 .image-container img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.news-card2 .image-container {
     display: flex;
     gap: 10px; 
     justify-content: center; 
