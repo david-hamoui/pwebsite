@@ -373,7 +373,6 @@ body, html * {
 }
 
 .news-card {
-    flex: 1 1 calc(60%);
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
