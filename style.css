@@ -381,7 +381,7 @@ body, html * {
 }
 
 .news-card2 {
-    max-width: calc(33.33% - 40px);
+    max-width: calc(33.33% - 20px);
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
