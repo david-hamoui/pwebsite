@@ -2,27 +2,25 @@ const circle = document.querySelector('.circle');
 
 let mouseX = 0, mouseY = 0;
 
+// Track mouse position
 document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
+  mouseX = e.clientX - circle.offsetWidth / 2;
+  mouseY = e.clientY - circle.offsetHeight / 2;
 });
 
+// Animation loop to move ball smoothly
 function animate() {
-  const x = mouseX - circle.offsetWidth / 2;
-  const y = mouseY - circle.offsetHeight / 2;
-
-  circle.style.transform = `translate(${x}px, ${y}px)`;
+  circle.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
   requestAnimationFrame(animate);
 }
-
 animate();
 
+// Click effect
 document.addEventListener('click', () => {
-  circle.classList.add('clicked');
   circle.style.transform += ' scale(0.5)';
 
   setTimeout(() => {
-    circle.style.transform = circle.style.transform.replace(' scale(0.5)', '');
-    circle.classList.remove('clicked');
+    // Reset back to normal size at same position
+    circle.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1)`;
   }, 200);
 });
