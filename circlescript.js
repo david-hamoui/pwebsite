@@ -1,6 +1,7 @@
 const circle = document.querySelector('.circle');
 
-let mouseX = 0, mouseY = 0;
+let mouseX = window.innerWidth / 2;   // start centered
+let mouseY = window.innerHeight / 2;
 
 // Track mouse position
 document.addEventListener('mousemove', (e) => {
@@ -17,10 +18,14 @@ animate();
 
 // Click effect
 document.addEventListener('click', () => {
-  circle.style.transform += ' scale(0.5)';
+  circle.classList.add('clicked');
+
+  // scale down briefly
+  circle.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(0.5)`;
 
   setTimeout(() => {
-    // Reset back to normal size at same position
+    // reset scale
     circle.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1)`;
+    circle.classList.remove('clicked');
   }, 200);
 });
