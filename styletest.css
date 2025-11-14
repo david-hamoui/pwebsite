@@ -11,7 +11,7 @@ html, body {
 body {
     background: linear-gradient(120deg, #98afd9 0%, #3273b5 40%, #97a5be 100%);
     background-size: 400% 400%;
-    animation: bgShift 20s ease-in-out infinite;
+    animation: bgShift 10s ease-in-out infinite;
     position: relative;
 }
 
@@ -70,7 +70,7 @@ body, html * {
     box-shadow: 0 6px 22px rgba(2,8,23,0.5), inset 0 1px 0 rgba(255,255,255,0.6);
     mix-blend-mode: screen;
     transform-origin: center center;
-    animation: pulse 1.6s ease-in-out infinite;
+    animation: pulse 1.4s ease-in-out infinite;
 }
 
 /* subtle pulsing keyframes */
