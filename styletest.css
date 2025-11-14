@@ -47,9 +47,13 @@ body, html * {
     text-shadow: 0 6px 30px rgba(2,6,23,0.65);
 }
 
+/* ...existing code... */
+
 /* The following circle follows the mouse */
 .circle {
     position: fixed;
+    left: 0;
+    top: 0;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -73,6 +77,13 @@ body, html * {
     animation: pulse 1.4s ease-in-out infinite;
 }
 
+/* Expanded state: fills viewport */
+.circle.expand {
+    /* width/height/left/top are driven by inline styles in JS to ensure correct animation from click point */
+    overflow: hidden;
+    z-index: 9999;
+}
+
 /* subtle pulsing keyframes */
 @keyframes pulse {
     0%   { transform: scale(0.94); opacity: 0.98; }
@@ -80,19 +91,13 @@ body, html * {
     100% { transform: scale(0.94); opacity: 0.98; }
 }
 
-/* Gentle keyframe movement of gradient */
-@keyframes bgShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
     body { animation: none; }
-    .circle { transition: none; }
+    .circle { transition: none !important; }
 }
 
+/* hide native cursor on this site (keeps the custom circle as cursor) */
 * {
     cursor: none !important;
 }
