@@ -236,7 +236,6 @@ a:hover {
 
 body, html * {
     scroll-behavior: smooth;
-    cursor: none !important;
 }
 
 /* About Me Section */
@@ -670,4 +669,8 @@ footer a {
         flex-direction: column;
         align-items: center;
     }
+}
+
+* {
+    cursor: none !important;
 }
