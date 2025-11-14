@@ -8,7 +8,7 @@
     let targetY = window.innerHeight / 2;
     let currentX = targetX;
     let currentY = targetY;
-    const ease = 0.16; // lower = snappier, higher = smoother
+    const ease = 0.2; // lower = snappier, higher = smoother
 
     let isExpanding = false;
 
