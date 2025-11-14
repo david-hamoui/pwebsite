@@ -80,6 +80,9 @@ body, html * {
     /* width/height/left/top are driven by inline styles in JS to ensure correct animation from click point */
     overflow: hidden;
     z-index: 9999;
+    mix-blend-mode: normal;
+    background: #fff;
+    box-shadow: none;
 }
 
 /* subtle pulsing keyframes */
