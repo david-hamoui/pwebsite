@@ -68,8 +68,8 @@ body, html * {
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 6px 22px rgba(2,8,23,0.5), inset 0 1px 0 rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.665);
+    box-shadow: 0 6px 22px rgba(2, 8, 23, 0.425), inset 0 1px 0 rgba(255, 255, 255, 0.506);
     mix-blend-mode: screen;
     transform-origin: center center;
     animation: pulse 1.4s ease-in-out infinite;
