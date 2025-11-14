@@ -1,0 +1,79 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+/* Animated subtle full-screen background */
+body {
+    background: linear-gradient(120deg, #071021 0%, #10253a 40%, #0e1a2a 100%);
+    background-size: 400% 400%;
+    animation: bgShift 20s ease-in-out infinite;
+    position: relative;
+}
+
+/* slight overlay vignette */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(60% 60% at 50% 40%, rgba(255,255,255,0.02), rgba(0,0,0,0.35));
+    mix-blend-mode: overlay;
+}
+
+body, html * {
+    scroll-behavior: smooth;
+}
+
+/* Title centered */
+#main-title {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+    font-size: clamp(18px, 4vw, 36px);
+    text-transform: lowercase;
+    letter-spacing: 0.02em;
+    text-align: center;
+    user-select: none;
+    pointer-events: none; /* allow clicking "anywhere" even on text */
+    text-shadow: 0 6px 30px rgba(2,6,23,0.65);
+}
+
+/* The following circle follows the mouse */
+.circle {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 6px 22px rgba(2,8,23,0.5), inset 0 1px 0 rgba(255,255,255,0.6);
+    transform: translate(-50%, -50%) translate3d(0px, 0px, 0);
+    pointer-events: none;
+    mix-blend-mode: screen;
+    will-change: transform;
+}
+
+/* Gentle keyframe movement of gradient */
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    body { animation: none; }
+    .circle { transition: none; }
+}
+
+* {
+    cursor: none !important;
+}
