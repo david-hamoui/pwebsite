@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Circle</title>
+    <style>
+        /* CSS is right here */
+        .circle {
+            will-change: transform;
+            position: fixed;
+            width: 30px; /* Made it bigger */
+            height: 30px;
+            background-color: red; /* Guaranteed to be visible */
+            border-radius: 50%;
+            z-index: 9999;
+            pointer-events: none;
+            transform-origin: center;
+        }
+        
+        body {
+            /* Added text and height so you can move around */
+            height: 200vh;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Move your mouse</h1>
+    <p>A red circle should be following you.</p>
+
+    <div class="circle"></div>
+    
+    <script>
+        // JS is right here
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // This message will appear in your CONSOLE
+            console.log("Page loaded. Finding circle..."); 
+            
+            const circle = document.querySelector('.circle');
+
+            if (!circle) {
+                // This error will appear in your CONSOLE if it fails
+                console.error("Error: Could not find .circle element!");
+                return;
+            }
+            
+            // This message will appear in your CONSOLE
+            console.log("Circle found! Starting animation.");
+
+            let mouseX = 0;
+            let mouseY = 0;
+            let currentX = 0;
+            let currentY = 0;
+            let targetScale = 1;
+            let currentScale = 1;
+            const damp = 0.15;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+
+            document.addEventListener('click', () => {
+                targetScale = 0.5;
+                setTimeout(() => {
+                    targetScale = 1;
+                }, 200);
+            });
+
+            const animate = () => {
+                const targetX = mouseX - circle.offsetWidth / 2;
+                const targetY = mouseY - circle.offsetHeight / 2;
+
+                currentX += (targetX - currentX) * damp;
+                currentY += (targetY - currentY) * damp;
+                currentScale += (targetScale - currentScale) * damp;
+
+                circle.style.transform = `translate3d(${Math.round(currentX)}px, ${Math.round(currentY)}px, 0) scale(${currentScale})`;
+                requestAnimationFrame(animate);
+            };
+            
+            animate();
+        });
+    </script>
+</body>
+</html>
