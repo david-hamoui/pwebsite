@@ -53,7 +53,11 @@
         circle.style.transition = 'transform 700ms ease, border-radius 700ms ease, background 700ms ease';
         // ensure transform-origin is center (CSS should already set it, but ensure here)
         circle.style.transformOrigin = 'center center';
-        
+
+        circle.style.mixBlendMode = 'normal';
+        circle.style.background = '#ffffff';
+        circle.style.boxShadow = 'none';
+
         // force reflow then scale
         void circle.offsetWidth;
         // scale up so it visually fills the viewport from the click point
