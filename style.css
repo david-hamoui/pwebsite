@@ -208,13 +208,13 @@ a:hover {
     
     top: 0;
     left: 0;
-    opacity: 1;
+    opacity: 0;
 
     width: 25px;
     height: 25px;
     background-image: url('images/tennisball.png');
     background-size: cover;
-    background-color: red;
+    /*background-color: red;*/
     background-position: center;
     border-radius: 50%;
     z-index: 9999;

@@ -1,13 +1,11 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-            
-    const circle = document.querySelector('.circle');
 
+    const circle = document.querySelector('.circle');
     if (!circle) {
         console.error("Error: Could not find .circle element!");
         return;
     }
-    
+
     let mouseX = 0;
     let mouseY = 0;
     let currentX = 0;
@@ -15,15 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let targetScale = 1;
     let currentScale = 1;
     const damp = 0.15;
-    
+
+    let hasMoved = false;
+
     document.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
-        
-        if (circle.style.opacity == '0') {
+
+        if (!hasMoved) { 
             currentX = mouseX - circle.offsetWidth / 2;
             currentY = mouseY - circle.offsetHeight / 2;
-            circle.style.opacity = 1;
+
+            circle.style.opacity = 1; 
+
+            hasMoved = true; 
         }
     });
 
@@ -47,6 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         circle.style.transform = `translate3d(${Math.round(currentX)}px, ${Math.round(currentY)}px, 0) scale(${currentScale})`;
         requestAnimationFrame(animate);
     };
-    
+
     animate();
 });
