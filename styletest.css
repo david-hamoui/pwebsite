@@ -50,11 +50,11 @@ body, html * {
 /* The following circle follows the mouse */
 .circle {
     position: fixed;
-    width: 46px;
-    height: 46px;
+    width: 66px;
+    height: 66px;
     border-radius: 50%;
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 6px 22px rgba(2,8,23,0.5), inset 0 1px 0 rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.675);
+    box-shadow: 0 6px 22px rgba(2, 8, 23, 0.405), inset 0 1px 0 rgba(255, 255, 255, 0.542);
     transform: translate(-50%, -50%) translate3d(0px, 0px, 0);
     pointer-events: none;
     mix-blend-mode: screen;
