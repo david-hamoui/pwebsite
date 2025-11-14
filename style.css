@@ -214,6 +214,7 @@ a:hover {
     height: 25px;
     background-image: url('images/tennisball.png');
     background-size: cover;
+    background-color: red;
     background-position: center;
     border-radius: 50%;
     z-index: 9999;
@@ -223,7 +224,7 @@ a:hover {
     transition: width 0.2s ease-in-out, 
                 height 0.2s ease-in-out, 
                 background-color 0.4s ease-in-out,
-                opacity 0.3s ease; /* For the fade-in */
+                opacity 0.3s ease;
 }
 
 .circle.clicked {
