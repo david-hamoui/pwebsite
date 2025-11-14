@@ -85,6 +85,12 @@ body, html * {
     box-shadow: none;
 }
 
+@keyframes bgShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 /* subtle pulsing keyframes */
 @keyframes pulse {
     0%   { transform: scale(0.94); opacity: 0.98; }
