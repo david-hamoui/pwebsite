@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <title>Test Circle</title>
     <style>
-        /* CSS is right here */
         .circle {
             will-change: transform;
             position: fixed;
-            width: 30px; /* Made it bigger */
+            
+            /* --- THE FIX --- */
+            top: 0;
+            left: 0;
+            /* --------------- */
+
+            width: 30px; 
             height: 30px;
-            background-color: red; /* Guaranteed to be visible */
+            background-color: red;
             border-radius: 50%;
             z-index: 9999;
             pointer-events: none;
