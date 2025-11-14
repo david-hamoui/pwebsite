@@ -9,7 +9,7 @@ html, body {
 
 /* Animated subtle full-screen background */
 body {
-    background: linear-gradient(120deg, #071021 0%, #10253a 40%, #0e1a2a 100%);
+    background: linear-gradient(120deg, #98afd9 0%, #3273b5 40%, #98afd9 100%);
     background-size: 400% 400%;
     animation: bgShift 20s ease-in-out infinite;
     position: relative;
@@ -59,6 +59,25 @@ body, html * {
     pointer-events: none;
     mix-blend-mode: screen;
     will-change: transform;
+}
+
+/* visible pulsing layer inside the container */
+.circle .pulse {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 6px 22px rgba(2,8,23,0.5), inset 0 1px 0 rgba(255,255,255,0.6);
+    mix-blend-mode: screen;
+    transform-origin: center center;
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+/* subtle pulsing keyframes */
+@keyframes pulse {
+    0%   { transform: scale(0.94); opacity: 0.98; }
+    50%  { transform: scale(1.18); opacity: 0.6;  }
+    100% { transform: scale(0.94); opacity: 0.98; }
 }
 
 /* Gentle keyframe movement of gradient */
