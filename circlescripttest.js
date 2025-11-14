@@ -1,5 +1,5 @@
-// ...existing code...
 // Smooth mouse-following circle with requestAnimationFrame and lerp.
+// ...existing code...
 (function () {
     const circle = document.querySelector('.circle');
     if (!circle) return;
@@ -24,33 +24,47 @@
         if (isExpanding) return;
         isExpanding = true;
 
-        // freeze current rendered position
-        // ensure currentX/currentY are the displayed values
-        // (raf loop keeps them near target already)
-        // set left/top to current position and clear translate3d offset
-        circle.style.left = `${Math.round(currentX)}px`;
-        circle.style.top = `${Math.round(currentY)}px`;
+        // use the actual click coords so animation starts at the click point
+        const clickX = e.clientX;
+        const clickY = e.clientY;
 
-        // stop moving by making transform only the centering offset
-        circle.style.transform = 'translate(-50%, -50%)';
-        // animate via CSS (fallback to inline transition for consistency)
-        circle.style.transition = 'left 700ms ease, top 700ms ease, width 700ms ease, height 700ms ease, border-radius 700ms ease, background 700ms ease';
-        // trigger reflow then set expanded values
+        // set fixed positioning at the click point (centered via translate(-50%,-50%))
+        circle.style.left = `${clickX}px`;
+        circle.style.top = `${clickY}px`;
+        circle.style.transform = 'translate(-50%, -50%) scale(1)';
+        // lock current explicit size so we can scale from it
+        const initialW = circle.offsetWidth || 100;
+        const initialH = circle.offsetHeight || initialW;
+        circle.style.width = `${initialW}px`;
+        circle.style.height = `${initialH}px`;
+        circle.style.borderRadius = getComputedStyle(circle).borderRadius || '50%';
+
+        // compute scale needed to cover the farthest corner from the click point
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const dx = Math.max(clickX, w - clickX);
+        const dy = Math.max(clickY, h - clickY);
+        const farDist = Math.sqrt(dx * dx + dy * dy);
+        const requiredDiameter = farDist * 2;
+        const initDiameter = Math.max(initialW, initialH);
+        const scale = Math.max(1, requiredDiameter / initDiameter);
+
+        // prepare transition on transform (scale) and border-radius
+        circle.style.transition = 'transform 700ms ease, border-radius 700ms ease, background 700ms ease';
+        // ensure transform-origin is center (CSS should already set it, but ensure here)
+        circle.style.transformOrigin = 'center center';
+
+        // force reflow then scale
         void circle.offsetWidth;
-
-        circle.classList.add('expand');
-        // move center to viewport middle and enlarge
-        circle.style.left = '50vw';
-        circle.style.top = '50vh';
-        circle.style.width = '200vmax';
-        circle.style.height = '200vmax';
+        // scale up so it visually fills the viewport from the click point
+        circle.style.transform = `translate(-50%, -50%) scale(${scale})`;
         circle.style.borderRadius = '0%';
 
-        // after transition finishes, navigate
+        // when scale transition ends, navigate
         const onTransitionEnd = (ev) => {
-            // only handle once for width/height transition
-            if (ev.propertyName === 'width' || ev.propertyName === 'height') {
+            if (ev.propertyName === 'transform') {
                 circle.removeEventListener('transitionend', onTransitionEnd);
+                // short delay to ensure user sees the fill, then navigate
                 window.location.href = 'abouttest.html';
             }
         };
