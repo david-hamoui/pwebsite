@@ -1,9 +1,15 @@
-
 const circle = document.querySelector('.circle');
 
 let mouseX = 0;
 let mouseY = 0;
-let scale = 1;
+
+let currentX = 0;
+let currentY = 0;
+
+let targetScale = 1;
+let currentScale = 1;
+
+const damp = 0.15;
 
 document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
@@ -12,18 +18,24 @@ document.addEventListener('mousemove', (e) => {
 
 document.addEventListener('click', () => {
     circle.classList.add('clicked');
-    scale = 0.5;
+    targetScale = 0.5;
 
     setTimeout(() => {
-        scale = 1;
+        targetScale = 1;
         circle.classList.remove('clicked');
     }, 200);
 });
 
 const animate = () => {
-    const posX = mouseX - circle.offsetWidth / 2;
-    const posY = mouseY - circle.offsetHeight / 2;
-    circle.style.transform = `translate3d(${posX}px, ${posY}px, 0) scale(${scale})`;
+    const targetX = mouseX - circle.offsetWidth / 2;
+    const targetY = mouseY - circle.offsetHeight / 2;
+
+    currentX += (targetX - currentX) * damp;
+    currentY += (targetY - currentY) * damp;
+    
+    currentScale += (targetScale - currentScale) * damp;
+
+    circle.style.transform = `translate3d(${Math.round(currentX)}px, ${Math.round(currentY)}px, 0) scale(${currentScale})`;
 
     requestAnimationFrame(animate);
 };
