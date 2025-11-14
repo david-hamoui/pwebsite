@@ -7,7 +7,6 @@ html, body {
     overflow: hidden;
 }
 
-/* Animated subtle full-screen background */
 body {
     background: linear-gradient(120deg, #e47dea, #3273b5 38.66%, #78cda8);
     background-size: 400% 400%;
@@ -15,7 +14,6 @@ body {
     position: relative;
 }
 
-/* slight overlay vignette */
 body::after {
     content: "";
     position: fixed;
@@ -29,7 +27,6 @@ body, html * {
     scroll-behavior: smooth;
 }
 
-/* Title centered */
 #main-title {
     position: fixed;
     left: 50%;
@@ -43,7 +40,7 @@ body, html * {
     letter-spacing: 0.02em;
     text-align: center;
     user-select: none;
-    pointer-events: none; /* allow clicking "anywhere" even on text */
+    pointer-events: none;
     text-shadow: 0 6px 30px rgba(2,6,23,0.65);
 }
 
@@ -57,13 +54,13 @@ body, html * {
     background: rgba(255, 255, 255, 0.465);
     box-shadow: 0 6px 22px rgba(2, 8, 23, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.394);
     transform: translate(-50%, -50%) translate3d(0px, 0px, 0);
-    transform-origin: center center; /* <- added */
+    transform-origin: center center;
     pointer-events: none;
     mix-blend-mode: screen;
     will-change: transform;
 }
 
-/* visible pulsing layer inside the container */
+
 .circle .pulse {
     position: absolute;
     inset: 0;
@@ -75,9 +72,8 @@ body, html * {
     animation: pulse 1.4s ease-in-out infinite;
 }
 
-/* Expanded state: fills viewport */
+
 .circle.expand {
-    /* width/height/left/top are driven by inline styles in JS to ensure correct animation from click point */
     overflow: hidden;
     z-index: 9999;
     mix-blend-mode: normal;
@@ -92,20 +88,20 @@ body, html * {
     100% { background-position: 0% 50%; }
 }
 
-/* subtle pulsing keyframes */
+
 @keyframes pulse {
     0%   { transform: scale(0.94); opacity: 0.98; }
     50%  { transform: scale(1.18); opacity: 0.6;  }
     100% { transform: scale(0.94); opacity: 0.98; }
 }
 
-/* Respect reduced motion */
+
 @media (prefers-reduced-motion: reduce) {
     body { animation: none; }
     .circle { transition: none !important; }
 }
 
-/* hide native cursor on this site (keeps the custom circle as cursor) */
+
 * {
     cursor: none !important;
 }
