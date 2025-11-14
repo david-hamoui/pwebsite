@@ -209,6 +209,7 @@ a:hover {
     height: 25px;
     background-image: url('images/tennisball.png');
     background-size: cover;
+    background-color: red;
     background-position: center;
     border-radius: 50%;
     z-index: 9999;
