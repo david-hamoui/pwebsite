@@ -1,22 +1,31 @@
 
 const circle = document.querySelector('.circle');
 
+let mouseX = 0;
+let mouseY = 0;
+let scale = 1;
 
 document.addEventListener('mousemove', (e) => {
-    
-    circle.style.left = `${e.clientX - circle.offsetWidth / 2}px`;
-    circle.style.top = `${e.clientY - circle.offsetHeight / 2}px`;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 });
 
-
 document.addEventListener('click', () => {
-    
     circle.classList.add('clicked');
-
-    circle.style.transform = 'scale(0.5)';
+    scale = 0.5;
 
     setTimeout(() => {
-        circle.style.transform = 'scale(1)';
+        scale = 1;
         circle.classList.remove('clicked');
     }, 200);
 });
+
+const animate = () => {
+    const posX = mouseX - circle.offsetWidth / 2;
+    const posY = mouseY - circle.offsetHeight / 2;
+    circle.style.transform = `translate3d(${posX}px, ${posY}px, 0) scale(${scale})`;
+
+    requestAnimationFrame(animate);
+};
+
+animate();

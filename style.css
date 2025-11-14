@@ -203,18 +203,19 @@ a:hover {
 }
 
 .circle {
+    will-change: transform;
     position: fixed;
     width: 25px;
     height: 25px;
     background-image: url('images/tennisball.png');
     background-size: cover;
     background-position: center;
-    /*background-color: #7bc133; before: #e2c000*/
     border-radius: 50%;
     z-index: 9999;
     pointer-events: none;
     transform-origin: center;
-    transition: left 0.1s ease-out, top 0.1s ease-out, transform 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.4s ease-in-out;
+    
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.4s ease-in-out;
 }
 
 .circle.clicked {
