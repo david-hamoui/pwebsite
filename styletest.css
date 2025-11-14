@@ -9,7 +9,7 @@ html, body {
 
 /* Animated subtle full-screen background */
 body {
-    background: linear-gradient(120deg, #98afd9 0%, #3273b5 40%, #98afd9 100%);
+    background: linear-gradient(120deg, #98afd9 0%, #3273b5 40%, #97a5be 100%);
     background-size: 400% 400%;
     animation: bgShift 20s ease-in-out infinite;
     position: relative;
