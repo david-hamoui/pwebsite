@@ -9,21 +9,32 @@
 </head>
 <body>
 <header id="main-header">
-    <h1 id="main-title"><a href="index.html">Who's David Hamoui?</a></h1>
-    <nav>
-        <a href="about.html">About Me</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="projects-extracurriculars.html">Projects & Extracurriculars</a>
-        <b href="honors-awards.html">Honors & Awards</b>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    <div class="header-left">
+        <h1 id="main-title"><a href="index.html"><b>Who's David Hamoui?</b></a></h1>
+    </div>
+    <div class="header-right">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="projects-extracurriculars.html">Projects</a>
+            <b href="honors-awards.html">Honors</b>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">◐</button>
+        <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    </div>
 </header>
 
 <div class="container">
-    <section id="honors">
+    <section id="honors" class="reveal">
         <h2>Honors & Awards (sorted newest first)</h2>
         <div class="hcards">
+            <div class="hcard gld">
+                <img src="images/gold.png" alt="Gold Medal" class="pop-out-medal">
+                <h3>Faculty Honors @ Georgia Tech</h3>
+                <p><strong>Jan 2026</strong></p>
+                <p>Recipient of Faculty Honors for a perfect 4.0 GPA.</p>
+            </div>
             <div class="hcard hono">
                 <img src="images/honorable.png" alt="Honorable Mention" class="pop-out-medal">
                 <h3>Honorable Mention @ OBMEP 2024 (Math Olympics)</h3>
@@ -95,7 +106,12 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 David Hamoui. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="mailto:davidhamoui737@gmail.com" class="footer-btn">Email</a>
+        <a href="https://www.linkedin.com/in/david-hamoui/" target="_blank" class="footer-btn">LinkedIn</a>
+        <a href="https://github.com/david-hamoui" target="_blank" class="footer-btn">GitHub</a>
+    </div>
+    <p>&copy; 2026 David Hamoui. All rights reserved.</p>
 </footer>
 <script src="script.js"></script>
 <div class="circle"></div>

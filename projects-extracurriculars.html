@@ -9,21 +9,26 @@
 </head>
 <body>
 <header id="main-header">
-    <h1 id="main-title"><a href="index.html">Who's David Hamoui?</a></h1>
-    <nav>
-        <a href="about.html">About Me</a>
-        <a href="timeline.html">Timeline</a>
-        <b href="projects-extracurriculars.html">Projects & Extracurriculars</b>
-        <a href="honors-awards.html">Honors & Awards</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    <div class="header-left">
+        <h1 id="main-title"><a href="index.html"><b>Who's David Hamoui?</b></a></h1>
+    </div>
+    <div class="header-right">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="timeline.html">Timeline</a>
+            <b href="projects-extracurriculars.html">Projects</b>
+            <a href="honors-awards.html">Honors</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">◐</button>
+        <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    </div>
 </header>
 
 <div class="container">
     <h2>Projects & Extracurriculars (hover over cards for photos!)</h2>
 
-    <section id="extracurriculars">
+    <section id="extracurriculars" class="reveal">
         <h2>My Extracurriculars</h2>
         <div class="cards">
             <div class="card rc">
@@ -45,7 +50,7 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="reveal">
         <h2>Personal Projects</h2>
         <div class="cards">
             <div class="card ip">
@@ -64,7 +69,7 @@
         
     </section>
 
-    <section id="cProjects">
+    <section id="cProjects" class="reveal">
         <h2>Coding Experience</h2>
         <div class="cards">
             <div class="card awp">
@@ -97,7 +102,12 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 David Hamoui. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="mailto:davidhamoui737@gmail.com" class="footer-btn">Email</a>
+        <a href="https://www.linkedin.com/in/david-hamoui/" target="_blank" class="footer-btn">LinkedIn</a>
+        <a href="https://github.com/david-hamoui" target="_blank" class="footer-btn">GitHub</a>
+    </div>
+    <p>&copy; 2026 David Hamoui. All rights reserved.</p>
 </footer>
 <script src="script.js"></script>
 <div class="circle"></div>

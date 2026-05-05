@@ -9,23 +9,28 @@
 </head>
 <body>
     <header id="main-header">
-        <h1 id="main-title"><a href="index.html">Who's David Hamoui?</a></h1>
-        <nav>
-            <a href="about.html">About Me</a>
-            <a href="timeline.html">Timeline</a>
-            <a href="projects-extracurriculars.html">Projects & Extracurriculars</a>
-            <a href="honors-awards.html">Honors & Awards</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-left">
+            <h1 id="main-title"><a href="index.html"><b>Who's David Hamoui?</b></a></h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="projects-extracurriculars.html">Projects</a>
+                <a href="honors-awards.html">Honors</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">◐</button>
+        </div>
     </header>
 
-    <main class="news-page">
-        <section class="intro">
+    <main class="news-page container">
+        <section class="intro reveal">
             <h2>Latest News About Me & My Projects</h2>
             <p>Here you'll find the latest updates, achievements, and events in my life.</p>
         </section>
 
-        <section class="news-cards">
+        <section class="news-cards reveal">
 
             <div class="news-card">
                 <p><strong>December 2024</strong></p>
@@ -63,8 +68,8 @@
 
         </section>
 
-        <section class="news-cards">
-            <div class="news-card2">
+        <section class="news-cards reveal">
+            <div class="news-card">
                 <p><strong>October 2023</strong></p>
                 <div class="image-container">
                     <img src="images/obmep-logo.jpg" alt="OBMEP's Logo">
@@ -79,7 +84,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 David Hamoui. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="mailto:davidhamoui737@gmail.com" class="footer-btn">Email</a>
+            <a href="https://www.linkedin.com/in/david-hamoui/" target="_blank" class="footer-btn">LinkedIn</a>
+            <a href="https://github.com/david-hamoui" target="_blank" class="footer-btn">GitHub</a>
+        </div>
+        <p>&copy; 2026 David Hamoui. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
     <div class="circle"></div>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Hamoui - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        /* Specific Styles for About 2 Landing Page */
+        .hero-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .hero-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-secondary);
+            box-shadow: 0 0 40px var(--glow-color);
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin: 0 0 10px 0;
+            background: linear-gradient(135deg, #fff, var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid var(--glass-border);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 10px 30px var(--glow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 15px 40px rgba(0, 191, 255, 0.4);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Grids */
+        .grid-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .highlight-card {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.08) 0%, rgba(0, 191, 255, 0.08) 100%);
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid var(--accent-primary);
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="header-left">
+            <h1 id="main-title"><a href="index.html"><b>Who's David Hamoui?</b></a></h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <b href="home.html">Home</b>
+                <a href="timeline.html">Timeline</a>
+                <a href="projects-extracurriculars.html">Projects</a>
+                <a href="honors-awards.html">Honors</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">◐</button>
+            <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero-section reveal">
+            <div class="hero-content">
+                <div class="reveal"
+                    style="display: inline-block; perspective: 1000px; margin-bottom: 30px; animation: float 6s ease-in-out infinite;">
+                    <img src="images/mephoto.png" alt="David Hamoui" id="avatar-img" class="hero-photo"
+                        style="transform-style: preserve-3d; will-change: transform;">
+                </div>
+                <h1 class="hero-title">David Hamoui</h1>
+                <p class="hero-subtitle" style="text-align: center; font-size: 2.2rem; margin-top: 20px;">
+                    <span style="color: var(--text-color);">Currently a</span>
+                    <span id="typewriter" style="color: var(--accent-secondary); font-weight: bold; font-style: italic;"></span><span
+                        class="typewriter-cursor"></span>
+                </p>
+                <p class="reveal"
+                    style="max-width: 600px; margin: 0 auto 40px auto; line-height: 1.8; color: var(--text-muted);">
+                    Hi! I'm a college student from Brazil studying CS at Georgia Institute of Technology, with a big
+                    goal—to make a difference in the world. Feel free to get a glimpse of my life.
+                </p>
+                <a href="timeline.html" class="hero-cta reveal">Explore My Journey</a>
+            </div>
+        </section>
+
+        <!-- Future Goals (Horizontal Scroll) -->
+        <div class="horizontal-scroll-wrapper" style="margin-top: -30px;">
+            <div class="horizontal-sticky-container">
+                <h2 style="text-align: center; margin-bottom: 50px; margin-top: 20px;">Looking Ahead</h2>
+                <div class="horizontal-timeline" id="h-timeline">
+                    <div class="roadmap-step">
+                        <div class="roadmap-badge">April 2026</div>
+                        <h3>100k Steps in 24 Hours</h3>
+                        <p>Recently walked 100,000 steps (77km) in 24 hours for a charity event organized with friends,
+                            donating the funds to Children's Healthcare of Atlanta.</p>
+                    </div>
+                    <div class="roadmap-step">
+                        <div class="roadmap-badge">Spring 2026</div>
+                        <h3>Finishing Freshman Year</h3>
+                        <p>Very proud to be so close to finishing my first year in college. It was definitely memorable.
+                        </p>
+                    </div>
+                    <div class="roadmap-step">
+                        <div class="roadmap-badge">Summer 2026</div>
+                        <h3>BTG Pactual Internship</h3>
+                        <p>10-week Summer Intern at BTG Pactual in São Paulo, working in an IT Wealth Management team.
+                        </p>
+                    </div>
+                    <div class="roadmap-step">
+                        <div class="roadmap-badge">Fall 2026</div>
+                        <h3>Starting 2nd Year</h3>
+                        <p>Excited to become a Sophomore and take more advanced CS classes like Objects and Design, and
+                            Computer Organization and Programming.</p>
+                    </div>
+                    <div class="roadmap-step">
+                        <div class="roadmap-badge">Fall 2026</div>
+                        <h3>Applying for T&M Minor</h3>
+                        <p>Planning to apply for the Steven A. Denning Technology & Management Program, combining my
+                            passions for tech and management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Highlight -->
+        <section id="featured" class="reveal">
+            <h2>Featured Highlight</h2>
+            <div class="card highlight-card">
+                <h3 style="font-size: 1.8rem;">Ubuntu Project</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 20px;">An NGO founded to connect schools and create
+                    meaningful social impact. Indirectly impacted over 10k people with hubs across Brazil, Colombia, and
+                    Tanzania.</p>
+                <a href="projects-extracurriculars.html" class="hero-cta"
+                    style="padding: 10px 25px; font-size: 0.9rem;">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Currently Into -->
+        <section id="currently-into" class="reveal">
+            <h2>I'm Diving Deep Into...</h2>
+            <div class="grid-section">
+                <div class="card">
+                    <h3>Pen Plotters</h3>
+                    <p>Like the AxiDraw, pen plotters automatically write or draw on a real piece of paper. I'm
+                        fascinated by how we could use this for real-world applications.</p>
+                </div>
+                <div class="card">
+                    <h3>AI Spatial Sounds for DJs</h3>
+                    <p>As a DJ, I see great potential for AI in the DJ scene: splitting songs into different parts
+                        (drums, vocals, instruments) with higher precision. It would also be interesting to introduce
+                        this to music streaming services.</p>
+                </div>
+                <div class="card">
+                    <h3>Philosophy</h3>
+                    <p>Right now, I'm very into optimistic nihilism and other philosophies. Currently reading
+                        Meditations by Marcus Aurelius.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section (Bento Grid) -->
+        <section id="hobbies" class="reveal" style="margin-top: 50px;">
+            <h2>Hobbies</h2>
+            <div class="bento-grid">
+                <div class="bento-item bento-coding">
+                    <div class="bento-content">
+                        <h3>Coding Projects</h3>
+                        <p>On my free time, I like to challenge myself with some coding problems, or trying to develop
+                            an idea that came to mind.</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-walking">
+                    <div class="bento-content">
+                        <h3>Walking & Running</h3>
+                        <p>Recently, I've just completed a 100k steps (77km) in under 24 hours!</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-dj">
+                    <div class="bento-content">
+                        <h3>DJing</h3>
+                        <p>Mixing songs together, creating transitions, or just grooving.</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-reading">
+                    <div class="bento-content">
+                        <h3>Reading</h3>
+                        <p>Philosophy, life, fiction, and self-improvement, and reflections are my favorite books.</p>
+                    </div>
+                </div>
+                <div class="bento-item bento-tennis">
+                    <div class="bento-content">
+                        <h3>Tennis</h3>
+                        <p>Nothing distracts my mind more than hitting the court with some friends to play some tennis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Section (Marquee) -->
+        <section id="books" class="reveal" style="margin-top: 50px; margin-bottom: 150px;">
+            <h2>Books I've Read or Reading...</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">Hover to pause. Click and drag
+                to explore.</p>
+
+            <div class="books-marquee-container">
+                <div class="books-marquee-track" id="books-track"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="mailto:davidhamoui737@gmail.com" class="footer-btn">Email</a>
+            <a href="https://www.linkedin.com/in/david-hamoui/" target="_blank" class="footer-btn">LinkedIn</a>
+            <a href="https://github.com/david-hamoui" target="_blank" class="footer-btn">GitHub</a>
+        </div>
+        <p>&copy; 2026 David Hamoui. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <div class="circle"></div>
+    <script src="circlescript.js"></script>
+
+</body>
+
+</html>

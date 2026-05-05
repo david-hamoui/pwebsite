@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentY = 0;
     let targetScale = 1;
     let currentScale = 1;
-    const damp = 0.15;
+    const damp = 0.7;
 
     let hasMoved = false;
 

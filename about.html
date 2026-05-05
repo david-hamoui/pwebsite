@@ -9,19 +9,24 @@
 </head>
 <body>
 <header id="main-header">
-    <h1 id="main-title"><a href="index.html">Who's David Hamoui?</a></h1>
-    <nav>
-        <b href="about.html">About Me</b>
-        <a href="timeline.html">Timeline</a>
-        <a href="projects-extracurriculars.html">Projects & Extracurriculars</a>
-        <a href="honors-awards.html">Honors & Awards</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    <div class="header-left">
+        <h1 id="main-title"><a href="index.html"><b>Who's David Hamoui?</b></a></h1>
+    </div>
+    <div class="header-right">
+        <nav>
+            <b href="about.html">About Me</b>
+            <a href="timeline.html">Timeline</a>
+            <a href="projects-extracurriculars.html">Projects & Extracurriculars</a>
+            <a href="honors-awards.html">Honors & Awards</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">◐</button>
+        <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    </div>
 </header>
 
 <div class="container">
-    <section id="about">
+    <section id="about" class="reveal">
         <h2>About Me</h2>
         <div class="about-me">
             <img src="images/mephoto.png" alt="Yes. This is me!">
@@ -31,7 +36,7 @@
         </div>
     </section>
 
-    <section id="background" class="about-me-section">
+    <section id="background" class="about-me-section reveal">
         <h2>More about the books I've read and the songs I'm listening to...</h2>
 
         <section class="music-section">
@@ -44,7 +49,7 @@
         </section>
     </section>
 
-    <section id="books">
+    <section id="books" class="reveal">
         <h2>Books I'm Reading</h2>
         <ul class="current-reading">
             <li>

@@ -66,7 +66,7 @@
         const onTransitionEnd = (ev) => {
             if (ev.propertyName === 'transform') {
                 circle.removeEventListener('transitionend', onTransitionEnd);
-                window.location.href = 'about.html';
+                window.location.href = 'home.html';
             }
         };
         circle.addEventListener('transitionend', onTransitionEnd);

@@ -9,59 +9,74 @@
 </head>
 <body>
 <header id="main-header">
-    <h1 id="main-title"><a href="index.html">Who's David Hamoui?</a></h1>
-    <nav>
-        <a href="about.html">About Me</a>
-        <b href="timeline.html">Timeline</b>
-        <a href="projects-extracurriculars.html">Projects & Extracurriculars</a>
-        <a href="honors-awards.html">Honors & Awards</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    <div class="header-left">
+        <h1 id="main-title"><a href="index.html"><b>Who's David Hamoui?</b></a></h1>
+    </div>
+    <div class="header-right">
+        <nav>
+            <a href="home.html">Home</a>
+            <b href="timeline.html">Timeline</b>
+            <a href="projects-extracurriculars.html">Projects</a>
+            <a href="honors-awards.html">Honors</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">◐</button>
+        <a href="news.html" class="news-button" id="news-shrink">NEWS!</a>
+    </div>
 </header>
 
 <div class="timeline-container">
-    <h2>My Timeline (scroll down)</h2>
-    <div class="year-section" id="year-2007">
+    <h2>My Timeline</h2>
+    <div class="year-section reveal" id="year-2007">
         <h2>2007</h2>
         <p>Born March 2nd, São Paulo, Brazil. The adventure begins!</p>
     </div>
 
-    <div class="year-section fade-in" id="year-2010">
+    <div class="year-section reveal" id="year-2010">
         <h2>2013</h2>
         <p>Started middle school at Beit Yaacov.</p>
     </div>
 
-    <div class="year-section fade-in" id="year-2010">
+    <div class="year-section reveal" id="year-2010-b">
         <h2>2016</h2>
         <p>Read my first "real" book: Diary of a Wimpy Kid (at the time, in Portuguese).</p>
     </div>
 
-    <div class="year-section fade-in" id="year-2015">
+    <div class="year-section reveal" id="year-2015">
         <h2>2019</h2>
         <p>Got into coding and built my first basic game, everyone's favorite: snake game.</p>
     </div>
 
-    <div class="year-section fade-in" id="year-2015">
+    <div class="year-section reveal" id="year-2015-b">
         <h2>2020</h2>
         <p>Celebrated my bar mitzvah. Although I had to wear a mask throughout the ceremony, I couldn't have been happier!</p>
     </div>
 
-    <div class="year-section fade-in" id="year-2022">
+    <div class="year-section reveal" id="year-2022">
         <h2>(Beginning of) 2022</h2>
         <p>Changed schools. <br/>Beit Yaacov -> Avenues SP</p>
     </div>
 
-    <div class="year-section fade-in" id="year-2024">
+    <div class="year-section reveal" id="year-2024">
         <h2>2024...</h2>
         <p>Continued volunteering, learning, and pushing the boundaries of what I could achieve.</p>
+    </div>
+
+    <div class="year-section reveal" id="year-2025">
+        <h2>August 2025</h2>
+        <p>Started my college journey at Georgia Institute of Technology!</p>
     </div>
 
     <div class="spacer"></div>
 </div>
 
 <footer>
-    <p>&copy; 2025 David Hamoui. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="mailto:davidhamoui737@gmail.com" class="footer-btn">Email</a>
+        <a href="https://www.linkedin.com/in/david-hamoui/" target="_blank" class="footer-btn">LinkedIn</a>
+        <a href="https://github.com/david-hamoui" target="_blank" class="footer-btn">GitHub</a>
+    </div>
+    <p>&copy; 2026 David Hamoui. All rights reserved.</p>
 </footer>
 
 <script src="timeline.js"></script>
