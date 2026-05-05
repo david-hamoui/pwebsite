@@ -974,3 +974,42 @@ footer {
     }
     .bento-item { grid-column: span 1 !important; grid-row: span 1 !important; }
 }
+
+/* Scroll to Top Button */
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--accent-secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    user-select: none;
+}
+
+#scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#scroll-to-top:hover {
+    background: var(--glass-bg);
+    box-shadow: 0 0 15px var(--glow-color);
+    transform: translateY(-5px);
+}

@@ -310,3 +310,27 @@ function initBooksMarquee() {
 }
 
 document.addEventListener('DOMContentLoaded', initBooksMarquee);
+
+// Dynamic Scroll to Top Button
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollBtn = document.createElement('div');
+    scrollBtn.id = 'scroll-to-top';
+    scrollBtn.innerHTML = '↑';
+    scrollBtn.setAttribute('aria-label', 'Scroll to top');
+    document.body.appendChild(scrollBtn);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            scrollBtn.classList.add('visible');
+        } else {
+            scrollBtn.classList.remove('visible');
+        }
+    });
+
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
